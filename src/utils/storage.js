@@ -31,3 +31,9 @@ export const storage = {
         localStorage.removeItem(USER_KEY);
     }
 };
+
+export const getToken = () => {
+
+    return localStorage.getItem("token");
+
+};

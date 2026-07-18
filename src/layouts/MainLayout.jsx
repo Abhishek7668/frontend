@@ -3,16 +3,22 @@ import Navbar from "../components/Navbar";
 
 export default function MainLayout({ children }) {
     return (
-        <div className="flex min-h-screen bg-slate-950">
+        <div className="flex h-screen bg-slate-950">
 
+            {/* Sidebar */}
             <Sidebar />
 
-            <div className="flex-1 flex flex-col">
+            {/* Main Content */}
+            <div className="flex flex-1 flex-col min-h-0">
 
+                {/* Top Navbar */}
                 <Navbar />
 
-                <main className="flex-1 p-6 overflow-auto">
+                {/* Scrollable Content */}
+                <main className="flex-1 overflow-y-auto bg-slate-950">
+
                     {children}
+
                 </main>
 
             </div>

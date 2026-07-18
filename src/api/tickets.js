@@ -23,19 +23,21 @@ API.interceptors.request.use((config) => {
 });
 
 // ===============================
-// Knowledge APIs
+// Ticket APIs
 // ===============================
 
-export const uploadKnowledge = (formData) =>
+// Get All Tickets
+export const getTickets = () =>
+    API.get("/tickets");
 
-    API.post("/knowledge/upload", formData, {
+// Get Ticket By Ticket Number
+export const getTicket = (ticketNumber) =>
+    API.get(`/tickets/${ticketNumber}`);
 
-        headers: {
-
-            "Content-Type": "multipart/form-data"
-
-        }
-
+// Update Ticket Status
+export const updateTicket = (ticketNumber, status) =>
+    API.put(`/tickets/${ticketNumber}`, {
+        status
     });
 
 export default API;
