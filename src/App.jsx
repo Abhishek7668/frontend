@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 
-import login from "./pages/login";
+import Login from "./pages/login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Chat from "./pages/Chat";
@@ -17,7 +17,7 @@ function App() {
 
         <Routes>
 
-            <Route path="/" element={<login />} />
+            <Route path="/" element={<Login />} />
 
             <Route path="/register" element={<Register />} />
 
