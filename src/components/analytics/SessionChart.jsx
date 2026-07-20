@@ -12,7 +12,7 @@ export default function SessionChart({ data = [] }) {
 
     if (!data.length) {
         return (
-            <div className="flex h-[360px] items-center justify-center text-slate-400">
+            <div className="flex h-[22.5rem] items-center justify-center text-slate-400">
                 No session data available
             </div>
         );
@@ -20,7 +20,7 @@ export default function SessionChart({ data = [] }) {
 
     return (
 
-        <div className="h-[380px] w-full">
+        <div className="h-[23.75rem] w-full">
 
             <ResponsiveContainer width="100%" height="100%">
 
