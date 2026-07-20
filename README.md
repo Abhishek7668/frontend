@@ -1,16 +1,102 @@
-# React + Vite
+# Customer Support AI Assistant - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Overview
 
-Currently, two official plugins are available:
+The frontend is developed using **React.js** and **Tailwind CSS**. It
+provides a responsive dashboard for AI chat, ticket management,
+analytics, and knowledge base management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+------------------------------------------------------------------------
 
-## React Compiler
+# Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   Login & Registration
+-   Dashboard
+-   AI Chat Interface
+-   Ticket Management
+-   Analytics Dashboard
+-   Knowledge Base Upload
+-   Conversation History
+-   Responsive UI
 
-## Expanding the Oxlint configuration
+------------------------------------------------------------------------
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+# Technology Stack
+
+-   React.js
+-   Tailwind CSS
+-   Axios
+-   React Router
+-   Lucide React
+-   Recharts
+
+------------------------------------------------------------------------
+
+# Installation
+
+``` bash
+git clone <repository-url>
+cd frontend
+
+npm install
+```
+
+------------------------------------------------------------------------
+
+# Environment Variables
+
+Create `.env`
+
+``` env
+VITE_API_URL=http://localhost:8000
+```
+
+------------------------------------------------------------------------
+
+# Run
+
+``` bash
+npm run dev
+```
+
+------------------------------------------------------------------------
+
+# Build
+
+``` bash
+npm run build
+```
+
+------------------------------------------------------------------------
+
+# Folder Structure
+
+src/ - components/ - pages/ - hooks/ - layouts/ - services/ - routes/ -
+assets/
+
+------------------------------------------------------------------------
+
+# Pages
+
+-   Dashboard
+-   Analytics
+-   AI Chat
+-   Tickets
+-   Knowledge Base
+-   History
+-   Login
+-   Register
+
+------------------------------------------------------------------------
+
+# Deployment
+
+Platform: Vercel
+
+Build Command
+
+npm run build
+
+Output Directory
+
+dist
