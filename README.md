@@ -100,3 +100,6 @@ npm run build
 Output Directory
 
 dist
+----------------------------------------------------------------------------
+live-link
+https://frontend-d4c2.vercel.app/
