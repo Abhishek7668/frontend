@@ -47,8 +47,8 @@ export default function AgentChart({ data = [] }) {
                         nameKey="agent"
                         cx="32%"
                         cy="50%"
-                        innerRadius={45}
-                        outerRadius={105}
+                        innerRadius="24%"
+                        outerRadius="55%"
                         paddingAngle={2}
                         label={({ value }) => value}
                         labelLine={true}
