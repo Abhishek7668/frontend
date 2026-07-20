@@ -42,7 +42,8 @@ export default function StatCard({
 
         <div
             className={`
-                rounded-3xl
+                rounded-2xl
+                md:rounded-3xl
                 border
                 ${colors[color].border}
                 bg-slate-900/80
@@ -52,21 +53,23 @@ export default function StatCard({
                 duration-300
                 hover:-translate-y-1
                 hover:shadow-cyan-500/10
-                p-6
+                p-4
+                md:p-6
+                min-w-0
             `}
         >
 
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-3">
 
-                <div>
+                <div className="min-w-0">
 
-                    <p className="text-sm text-slate-400">
+                    <p className="text-xs md:text-sm text-slate-400 truncate">
 
                         {title}
 
                     </p>
 
-                    <h2 className="mt-3 text-5xl font-bold tracking-tight text-white">
+                    <h2 className="mt-2 md:mt-3 text-3xl md:text-5xl font-bold tracking-tight text-white">
 
                         {value ?? 0}
 
@@ -76,8 +79,11 @@ export default function StatCard({
 
                 <div
                     className={`
-                        h-16
-                        w-16
+                        h-12
+                        w-12
+                        md:h-16
+                        md:w-16
+                        shrink-0
                         rounded-2xl
                         flex
                         items-center

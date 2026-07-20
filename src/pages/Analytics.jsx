@@ -33,19 +33,19 @@ export default function Analytics() {
 
         <MainLayout>
 
-            <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-black p-8">
+            <div className="min-h-screen w-full bg-gradient-to-br from-slate-950 via-slate-900 to-black p-4 md:p-8">
 
                 {/* Header */}
 
-                <div className="mb-10">
+                <div className="mb-6 md:mb-10">
 
-                    <h1 className="text-4xl font-bold text-white">
+                    <h1 className="text-2xl md:text-4xl font-bold text-white">
 
                         Analytics Dashboard
 
                     </h1>
 
-                    <p className="mt-2 text-slate-400 text-lg">
+                    <p className="mt-2 text-slate-400 text-sm md:text-lg">
 
                         Monitor users, conversations, sessions and escalations in real time.
 
@@ -55,33 +55,33 @@ export default function Analytics() {
 
                 {/* Top Cards */}
 
-                <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+                <div className="grid gap-4 md:gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-4">
 
                     <StatCard
                         title="Total Users"
                         value={overview?.total_users}
-                        icon={<Users size={30} />}
+                        icon={<Users size={26} />}
                         color="cyan"
                     />
 
                     <StatCard
                         title="Total Sessions"
                         value={overview?.total_sessions}
-                        icon={<MessageCircle size={30} />}
+                        icon={<MessageCircle size={26} />}
                         color="emerald"
                     />
 
                     <StatCard
                         title="Total Conversations"
                         value={overview?.total_conversations}
-                        icon={<MessagesSquare size={30} />}
+                        icon={<MessagesSquare size={26} />}
                         color="amber"
                     />
 
                     <StatCard
                         title="Total Escalations"
                         value={overview?.total_escalations}
-                        icon={<AlertTriangle size={30} />}
+                        icon={<AlertTriangle size={26} />}
                         color="rose"
                     />
 
@@ -89,11 +89,11 @@ export default function Analytics() {
 
                 {/* Charts */}
 
-                <div className="grid gap-7 lg:grid-cols-2 mt-8">
+                <div className="grid gap-4 md:gap-7 grid-cols-1 lg:grid-cols-2 mt-6 md:mt-8">
 
-                    <div className="rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-7 shadow-xl">
+                    <div className="rounded-2xl md:rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-4 md:p-7 shadow-xl min-w-0 overflow-hidden">
 
-                        <h2 className="text-xl font-semibold text-white mb-5">
+                        <h2 className="text-lg md:text-xl font-semibold text-white mb-4 md:mb-5">
 
                             Agent Usage
 
@@ -103,9 +103,9 @@ export default function Analytics() {
 
                     </div>
 
-                    <div className="rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-7 shadow-xl">
+                    <div className="rounded-2xl md:rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-4 md:p-7 shadow-xl min-w-0 overflow-hidden">
 
-                        <h2 className="text-xl font-semibold text-white mb-5">
+                        <h2 className="text-lg md:text-xl font-semibold text-white mb-4 md:mb-5">
 
                             Intent Distribution
 
@@ -115,9 +115,9 @@ export default function Analytics() {
 
                     </div>
 
-                    <div className="rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-7 shadow-xl">
+                    <div className="rounded-2xl md:rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-4 md:p-7 shadow-xl min-w-0 overflow-hidden">
 
-                        <h2 className="text-xl font-semibold text-white mb-5">
+                        <h2 className="text-lg md:text-xl font-semibold text-white mb-4 md:mb-5">
 
                             Session Activity
 
@@ -127,9 +127,9 @@ export default function Analytics() {
 
                     </div>
 
-                    <div className="rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-7 shadow-xl">
+                    <div className="rounded-2xl md:rounded-3xl border border-slate-700 bg-slate-900/70 backdrop-blur-xl p-4 md:p-7 shadow-xl min-w-0 overflow-hidden">
 
-                        <h2 className="text-xl font-semibold text-white mb-5">
+                        <h2 className="text-lg md:text-xl font-semibold text-white mb-4 md:mb-5">
 
                             Escalation Summary
 
